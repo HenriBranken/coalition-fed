@@ -1,0 +1,32 @@
+@use "./colors" as cols;
+
+div.patient-heading {
+  display: flex;
+  justify-content: space-between;
+
+  &>img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+div.patient-list {
+  width: 367px;
+  height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e3e4e6;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: cols.$col_05;
+  border-radius: 3px;
+}

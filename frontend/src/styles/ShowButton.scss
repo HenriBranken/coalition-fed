@@ -1,0 +1,14 @@
+@use "./colors" as cols;
+@use "./fonts" as fws;
+@use "./mixins" as *;
+
+button.show {
+  margin: 0 auto;
+  width: 220px;
+  border-radius: 41px;
+  background-color: cols.$col_17;
+  padding: 11px 0;
+  @include font-preset(14);
+  font-weight: fws.$bold;
+  border: none;
+}

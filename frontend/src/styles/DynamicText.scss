@@ -1,0 +1,26 @@
+@use "./fonts" as fws;
+@use "./mixins" as *;
+
+div.dynamic-text {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: start;
+  align-items: center;
+
+  &>img {
+    width: 10px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &>div.text-value {
+    @include font-preset(14);
+    font-weight: fws.$regular;
+  }
+}
+
+div.text-value {
+  @include font-preset(14);
+  font-weight: fws.$regular;
+}

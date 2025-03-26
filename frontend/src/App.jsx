@@ -1,4 +1,5 @@
 import './App.css'
+import "../src/styles/global.scss";
 import Dashboard from './components/Dashboard'
 
 function App() {
@@ -10,4 +11,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

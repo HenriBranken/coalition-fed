@@ -1,0 +1,47 @@
+@use "./colors" as cols;
+@use "./fonts" as fws;
+@use "./mixins" as *;
+
+div.stat-card {
+  // box-sizing: border-box;
+  width: 228px;
+  // height: 242px;
+  padding: 16px;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &>img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+  }
+  &>div.stat-heading {
+    @include font-preset(16);
+    font-weight: fws.$medium;
+  }
+  &>div.stat-value {
+    @include font-preset(30);
+    font-weight: fws.$extra_bold;
+    margin-bottom: 17px;
+  }
+  &>div.stat-level {
+    @include font-preset(14);
+    font-weight: fws.$regular;
+  }
+}
+
+.respiratory-rate {
+  background-color: cols.$col_08;
+}
+
+.temperature {
+  background-color: cols.$col_09;
+}
+
+.heart-rate {
+  background-color: cols.$col_07;
+}

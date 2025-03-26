@@ -1,0 +1,8 @@
+div.info-list {
+  margin-top: 32px;
+  margin-bottom: 40px;
+
+  &>div.info-tile:last-child {
+    margin-bottom: 0;
+  }
+}

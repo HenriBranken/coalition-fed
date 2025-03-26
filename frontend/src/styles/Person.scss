@@ -1,0 +1,19 @@
+@use "./mixins" as *;
+@use "./fonts" as fws;
+
+div.person {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &>img.person-pp {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  &>div.name {
+    @include font-preset(24);
+    font-weight: fws.$extra_bold;
+    margin-top: 24px;
+  }
+}

@@ -1,0 +1,8 @@
+@use "./fonts" as fws;
+@use "./mixins" as *;
+
+div.lab-title {
+  margin-bottom: 27px;
+  @include font-preset(24);
+  font-weight: fws.$extra_bold;
+}

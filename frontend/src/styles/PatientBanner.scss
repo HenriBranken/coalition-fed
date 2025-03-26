@@ -1,0 +1,18 @@
+@use "./fonts" as fws;
+
+div.patient-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 43px;
+
+  &>div.patient-heading {
+    font-size: 24px;
+    font-weight: fws.$extra_bold;
+  }
+
+  &>img.search-glass {
+    width: 18px;
+    height: 18px;
+  }
+}

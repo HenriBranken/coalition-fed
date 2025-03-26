@@ -4,28 +4,20 @@ import "../../styles/PatientList.scss";
 
 const PatientList = () => {
   const { healthData } = useHealth();
-  const people = healthData.people;  // List of Patients.
+  const people = healthData.people;
 
   return (
-    <>
-      <div className="patient-heading">
-        <div>Patients</div>
-        <img src="/Search.svg" alt="Search Icon" />
-      </div>
-
-      <div className="patient-list">
-        {people.map(({ name, gender, age, profile_picture }) => (
-          <PatientTile
-            key={name.replace(/\s+/g, "")}
-            name={name}
-            gender={gender}
-            age={age}
-            picUrl={profile_picture}
-          />
-        ))}
-      </div>
-    </>
-  )
+    <div className="patient-list">
+      {people.map(({ name, gender, age, profile_picture }) => (
+        <PatientTile
+          key={name.split(" ").join('')}
+          name={name}
+          gender={gender}
+          age={age}
+          picUrl={profile_picture}
+        />
+      ))}
+    </div>)
 }
 
 export default PatientList;

@@ -1,0 +1,31 @@
+@use "./colors" as cols;
+@use "./fonts" as fws;
+@use "./mixins" as *;
+
+div.info-tile {
+  height: 42px;
+  margin-bottom: 24px;
+
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  &>img.tile-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: cols.$col_01;
+  }
+  &>div.info-stack {
+      display: flex;
+      flex-direction: column;
+      @include font-preset(14);
+      align-items: start;
+      justify-content: center;
+    &>div.top-line {
+      font-weight: fws.$medium;
+    }
+    &>div.bottom-line {
+      font-weight: fws.$bold;
+    }
+  }
+}

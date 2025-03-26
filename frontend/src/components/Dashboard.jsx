@@ -1,17 +1,16 @@
 import React from 'react';
 import useHealth from '../context/useHealth';
-import PatientList from './Patients/PatientList';
+import PatientsCard from './Patients/PatientsCard';
+
 
 const Dashboard = () => {
-  const { healthData, loading } = useHealth();
+  const { loading } = useHealth();
 
   return (
     <div>
       {!loading &&
-        <PatientList />
-      }      
-      {/* <PatientTile key={0} name={patient.name} gender={patient.gender} age={patient.age} picUrl={patient.profile_picture} /> */}
-      {healthData && <pre>{JSON.stringify(healthData, null, 2)}</pre>}
+        <PatientsCard />
+      }
     </div>
   );
 };

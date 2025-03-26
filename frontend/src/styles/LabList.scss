@@ -1,10 +1,16 @@
 @use "./colors" as cols;
 
-div.patient-list {
-  flex: 1; // Take up the remaining space after the banner.
+div.lab-list {
+  flex-grow: 1;
+  margin-bottom: 7px;
+  margin-left: 2px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
   overflow-y: auto;
-  overflow-x: hidden;
-  margin-right: calc(-6px - 20px);
+  margin-right: calc(2px - 4px);  // 2px - 4px = -2px
 
   &::-webkit-scrollbar {
     width: 6px;

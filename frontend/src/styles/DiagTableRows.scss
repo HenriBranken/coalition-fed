@@ -1,13 +1,17 @@
 @use "./colors" as cols;
 
-div.patient-list {
-  flex: 1; // Take up the remaining space after the banner.
+div.diag-table-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+  flex-grow: 1;
   overflow-y: auto;
   overflow-x: hidden;
-  margin-right: 2px;
+  margin-right: -2px;
 
   &::-webkit-scrollbar {
-    width: 6px;
+  width: 6px;
   }
 
   &::-webkit-scrollbar-track {

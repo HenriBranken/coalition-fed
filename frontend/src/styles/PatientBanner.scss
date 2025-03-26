@@ -1,12 +1,16 @@
 @use "./fonts" as fws;
+@use "./mixins" as *;
 
 div.patient-banner {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 43px;
+  margin-bottom: 24px;
+  padding: 0 20px;
 
   &>div.patient-heading {
+    @include font-preset(24);
     font-size: 24px;
     font-weight: fws.$extra_bold;
   }

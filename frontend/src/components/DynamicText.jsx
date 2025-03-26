@@ -1,4 +1,4 @@
-import "../../styles/DynamicText.scss";
+import "../styles/DynamicText.scss";
 
 const DynamicText = ({ text }) => {
   const firstWord = text.trim().split(" ")[0].toLowerCase();

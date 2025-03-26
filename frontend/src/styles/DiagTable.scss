@@ -1,0 +1,8 @@
+@use "./colors" as cols;
+
+div.diag-table {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 0;
+}

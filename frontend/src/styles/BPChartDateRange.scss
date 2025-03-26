@@ -1,0 +1,28 @@
+@use "./fonts" as fws;
+@use "./mixins" as *;
+
+div.bp-chart-date-range {
+  position: absolute;
+  bottom: 100%;
+  right: 32px;
+  margin-bottom: 20px;
+
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+
+  &>div.text {
+    @include font-preset(14);
+    font-weight: fws.$regular;
+  }
+
+  &>img.expand-more-logo {
+    width: auto;
+    height: 6px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

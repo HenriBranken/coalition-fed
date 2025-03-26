@@ -1,0 +1,9 @@
+@use "./fonts" as fws;
+@use "./mixins" as *;
+
+div.bp-chart-title {
+  @include font-preset(18);
+  font-weight: fws.$bold;
+  text-align: left;
+  margin-bottom: 20px;
+}

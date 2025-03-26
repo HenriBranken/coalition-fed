@@ -1,0 +1,59 @@
+@use "./colors" as cols;
+@use "./mixins" as *;
+@use "./fonts" as fws;
+
+div.nav-doctor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &>img.doctor-image {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+
+  &>div.gp-block {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-right: 12px;
+
+    &>div.gp-name {
+      @include font-preset(14);
+      font-weight: fws.$bold;
+    }
+
+    &>div.gp-description {
+      @include font-preset(14);
+      font-weight: fws.$regular;
+      color: cols.$col_20;
+    }
+  }
+
+  &>div.divider {
+    width: 1px;
+    height: 44px;
+    background-color: cols.$col_19;
+    margin-right: 12px;
+  }
+
+  &>img.settings {
+    width: 20px;
+    margin-right: 12px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &>img.more-vert {
+    height: 18px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

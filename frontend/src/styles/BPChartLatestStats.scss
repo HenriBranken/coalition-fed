@@ -1,0 +1,15 @@
+@use "./colors" as cols;
+
+div.bp-chart-latest-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+  width: 208px;
+
+  &>div.horiz-sep {
+    width: 100%;
+    height: 1px;
+    background-color: cols.$col_12;
+  }
+}

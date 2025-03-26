@@ -1,0 +1,10 @@
+@use "./fonts" as fws;
+@use "./mixins" as *;
+
+div.diag-banner {
+  flex-shrink: 0;
+  @include font-preset(24);
+  font-weight: fws.$extra_bold;
+  margin-bottom: 40px;
+  text-align: left;
+}

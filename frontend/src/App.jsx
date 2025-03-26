@@ -1,12 +1,12 @@
 import './App.css'
 import "../src/styles/global.scss";
-import Dashboard from './components/Dashboard'
+import TestSpace from "./components/TestSpace";
 
 function App() {
 
   return (
     <>
-      <Dashboard />
+      <TestSpace />
     </>
   )
 }

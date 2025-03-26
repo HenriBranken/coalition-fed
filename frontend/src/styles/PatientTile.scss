@@ -3,13 +3,13 @@
 @use "./mixins" as *;
 
 div.tile-container {
-  max-width: 317px;
-  min-width: 317px;
+  width: 353px;
+  height: 80px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 32px;
+  padding: 16px 16px 16px 20px;
 
   &>img.face {
     margin-right: 12px;
@@ -48,6 +48,6 @@ div.tile-container {
   }
 }
 
-div.tile-container:last-child {
-  margin-bottom: 0;
+div.tile-container.active {
+  background-color: cols.$col_18;
 }

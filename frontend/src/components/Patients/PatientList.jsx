@@ -6,14 +6,17 @@ const PatientList = () => {
   const { healthData } = useHealth();
   const people = healthData.people;
 
+  const patient = "jessicataylor"
+
   return (
     <div className="patient-list">
       {people.map(({ name, gender, age, profile_picture }) => (
         <PatientTile
-          key={name.split(" ").join('')}
+          key={name.split(" ").join('').toLowerCase()}
           name={name}
           gender={gender}
           age={age}
+          active={name.split(" ").join("").trim().toLowerCase() === patient}
           picUrl={profile_picture}
         />
       ))}

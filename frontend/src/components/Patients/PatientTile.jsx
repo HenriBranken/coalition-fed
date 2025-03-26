@@ -1,8 +1,8 @@
 import "../../styles/PatientTile.scss";
 
-const PatientTile = ({ name, gender, age, picUrl }) => { 
+const PatientTile = ({ name, gender, age, picUrl, active }) => { 
   return (
-    <div className="tile-container">
+    <div className={active ? "tile-container active" : "tile-container"}>
       {/* The Patient Profile Picture */}
         <img className="face" src={picUrl} alt={name + "'s Profile Picture"} />
       {/* Text Information */}

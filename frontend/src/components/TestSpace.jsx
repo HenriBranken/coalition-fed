@@ -1,6 +1,6 @@
 import React from 'react';
 import useHealth from '../context/useHealth';
-import PatientsCard from './Patients/PatientsCard';
+import BPChartCard from './BPChart/BPChartCard';
 
 
 const Dashboard = () => {
@@ -9,7 +9,9 @@ const Dashboard = () => {
   return (
     <div>
       {!loading &&
-        <PatientsCard />
+        // <PatientsCard />
+        // <BPChart />
+        <BPChartCard />
       }
     </div>
   );

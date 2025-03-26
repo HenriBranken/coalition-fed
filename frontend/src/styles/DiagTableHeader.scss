@@ -1,0 +1,40 @@
+@use "./fonts" as fws;
+@use "./colors" as cols;
+@use "./mixins" as *;
+
+div.diag-table-header {
+  flex-shrink: 0;
+  border-radius: 24px;
+  background-color: cols.$col_01;
+  padding: 0 16px;
+  margin-bottom: 10px;
+
+  width: 726px;
+  height: 48px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  & > div.col-1-header,
+  & > div.col-2-header,
+  & > div.col-3-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: fws.$bold;
+    @include font-preset(14);
+  }
+
+  & > div.col-1-header {
+    flex: 0 0 34%;
+  }
+
+  & > div.col-2-header {
+    flex: 0 0 52%;
+  }
+
+  & > div.col-3-header {
+    flex: 0 0 14%;
+  }
+}

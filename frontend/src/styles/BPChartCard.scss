@@ -1,0 +1,15 @@
+@use "./colors" as cols;
+
+div.bp-chart-card {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+
+  padding: 16px;
+  border-radius: 12px;
+
+  width: 726px;
+  height: 298px;
+
+  background-color: cols.$col_11;
+}

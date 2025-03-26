@@ -1,0 +1,39 @@
+@use "./fonts" as fws;
+@use "./colors" as cols;
+@use "./mixins" as *;
+
+div.diag-table-row {
+  padding: 11px 16px 10px;
+
+  width: 726px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;  // we don't want the columns to wrap.
+
+  & > div.col-1-row,
+  & > div.col-2-row,
+  & > div.col-3-row {
+    font-weight: fws.$regular;
+    @include font-preset(14);
+    flex-shrink: 0;
+    overflow-wrap: break-word;
+    white-space: normal;
+    text-align: left;
+    display: block;
+    padding-right: 12px;
+  }
+
+  & > div.col-1-row {
+    flex: 0 0 34%;
+  }
+
+  & > div.col-2-row {
+    flex: 0 0 52%;
+  }
+
+  & > div.col-3-row {
+    flex: 0 0 14%;
+  }
+}

@@ -4,7 +4,7 @@ import "../../../styles/StatRow.scss";
 
 const StatRow = () => {
   const { healthData } = useHealth();
-  const latest_stats = healthData.jessica.latest_stats;
+  const latest_stats = healthData.latest_stats;
 
   const data = [
     { name: "respiratory-rate", statPicUrl: "RespiratoryRate.svg", heading: "Respiratory Rate", unit: " bpm", data: latest_stats.respiratory_rate },

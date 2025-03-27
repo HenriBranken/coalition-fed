@@ -26,8 +26,8 @@ ChartJS.register(
 const BPChart = () => {
 
   const { healthData } = useHealth();
-  let bpData = healthData.jessica.diagnosis_history;
-  console.log(bpData);
+  let bpData = healthData.diagnosis_history;
+  
   const dateList = bpData.date.map(dateStr => {
     const date = new Date(dateStr);
     const month = date.toLocaleString("en-US", { month: "short" });

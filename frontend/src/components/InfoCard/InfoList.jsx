@@ -5,15 +5,7 @@ import "../../styles/InfoList.scss";
 const InfoList = () => {
   const { healthData } = useHealth();
 
-  const person = healthData.jessica;
-
-  const data = {
-    date_of_birth: person.date_of_birth,
-    gender: person.gender,
-    phone_number: person.phone_number,
-    emergency_contact: person.emergency_contact,
-    insurance_type: person.insurance_type
-  }
+  const data = healthData.person_summary;
   const genderIcon = data.gender.toLowerCase().trim() == "male" ? "MaleIcon.svg" : "FemaleIcon.svg";
   const date_of_birth = new Date(data.date_of_birth).toLocaleDateString('en-US', { year: "numeric", month: "long", day: "numeric" });
 

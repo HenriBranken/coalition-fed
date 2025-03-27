@@ -6,7 +6,8 @@ const PatientList = () => {
   const { healthData } = useHealth();
   const people = healthData.people;
 
-  const patient = "jessicataylor"
+  // Selected Patient: Jessica Taylor.
+  const patient = healthData.selected_patient.split(" ").join("").trim().toLowerCase();
 
   return (
     <div className="patient-list">

@@ -4,8 +4,8 @@ import useHealth from "../../../context/useHealth";
 
 const BPChartLatestStats = () => {
   const { healthData } = useHealth();
-  const systolic = healthData.jessica.latest_stats.systolic;
-  const diastolic = healthData.jessica.latest_stats.diastolic;
+  const systolic = healthData.systolic;
+  const diastolic = healthData.diastolic;
 
   return (
     <div className="bp-chart-latest-stats">

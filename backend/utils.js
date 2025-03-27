@@ -93,4 +93,15 @@ const summarizePeople = (data) => {
     }));
 }
 
-export { encodeBasicAuth, transformPersonData, summarizePeople };
+const generatePersonSummary = (activePerson) => { 
+  return {
+    date_of_birth: activePerson.date_of_birth,
+    gender: activePerson.gender,
+    phone_number: activePerson.phone_number,
+    emergency_contact: activePerson.emergency_contact,
+    insurance_type: activePerson.insurance_type,
+    profile_picture: activePerson.profile_picture
+  }
+}
+
+export { encodeBasicAuth, transformPersonData, summarizePeople, generatePersonSummary };

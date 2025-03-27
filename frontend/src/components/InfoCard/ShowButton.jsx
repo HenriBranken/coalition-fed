@@ -3,9 +3,9 @@ import "../../styles/ShowButton.scss";
 const ShowButton = ({ text }) => {
 
   return (
-    <button className="show">
+    <div className="show">
       {text}
-    </button>
+    </div>
   )
 
 }

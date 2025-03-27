@@ -6,7 +6,7 @@ import "../../styles/DiagTableRows.scss";
 const DiagTableRows = () => {
   const { healthData } = useHealth();
 
-  let data = healthData.jessica.diagnostic_list;
+  let data = healthData.diagnostic_list;
 
   // We want to see the vertical scrollbar.
   // Therefore we need more mock data.

@@ -4,13 +4,12 @@ import "../../styles/Person.scss";
 const Person = () => { 
   const { healthData } = useHealth();
   const data = {
-    profileUrl: healthData.jessica.profile_picture,
-    name: healthData.jessica.name
+    name: healthData.person_summary.name
   }
 
   return (
     <div className="person">
-      <img src={data.profileUrl} alt={data.name + "'s Profile Picture"} className="person-pp" />
+      <img src="/Layer_2@2x.png" alt={data.name + "'s Profile Picture"} className="person-pp" />
       <div className="name">{data.name}</div>
     </div>
   )

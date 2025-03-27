@@ -95,6 +95,7 @@ const summarizePeople = (data) => {
 
 const generatePersonSummary = (activePerson) => { 
   return {
+    name: activePerson.name,
     date_of_birth: activePerson.date_of_birth,
     gender: activePerson.gender,
     phone_number: activePerson.phone_number,

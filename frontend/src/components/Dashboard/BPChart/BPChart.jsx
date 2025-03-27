@@ -8,7 +8,8 @@ import {
   LinearScale,
   Title,
   Legend,
-  Tooltip
+  Tooltip,
+  Filler
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 import "../../../styles/BPChart.scss";
@@ -20,7 +21,8 @@ ChartJS.register(
   LinearScale,
   Title,
   Legend,
-  Tooltip
+  Tooltip,
+  Filler
 );
 
 const BPChart = () => {
@@ -53,7 +55,7 @@ const BPChart = () => {
         pointRadius: 6,
         pointHoverRadius: 8,
         tension: 0.3,
-        fill: true
+        fill: false
       },
       {
         label: "Systolic",
@@ -69,7 +71,7 @@ const BPChart = () => {
         pointRadius: 6,
         pointHoverRadius: 8,
         tension: 0.3,
-        fill: true
+        fill: false
       }
     ]
   };

@@ -1,4 +1,4 @@
-import "../../styles/BPChartTitle.scss";
+import "../../../styles/BPChartTitle.scss";
 
 const BPChartTitle = ({ text }) => {
   // text should be "Blood Pressure"

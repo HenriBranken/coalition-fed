@@ -1,5 +1,6 @@
-import "../../styles/StatCard.scss";
-import DynamicText from "../DynamicText";
+import "../../../styles/StatCard.scss";
+import DynamicText from "../../DynamicText";
+
 
 
 const StatCard = ({ name, statPicUrl, heading, unit, data }) => { 

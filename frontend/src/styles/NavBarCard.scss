@@ -1,3 +1,5 @@
+@use "./colors" as cols;
+
 div.nav-bar-card {
   width: 1564px;
   height: 72px;
@@ -9,5 +11,7 @@ div.nav-bar-card {
   align-items: center;
   justify-content: space-between;
 
-  border: black solid 1px;
+  // border: black solid 1px;
+
+  background-color: cols.$col_02;
 }

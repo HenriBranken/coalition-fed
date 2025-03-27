@@ -1,6 +1,6 @@
-import DynamicText from "../DynamicText";
-import "../../styles/BPChartLatestStat.scss";
-import "../../styles/DynamicText.scss";
+import DynamicText from "../../DynamicText";
+import "../../../styles/BPChartLatestStat.scss";
+import "../../../styles/DynamicText.scss";
 
 const BPChartLatestStat = ({ backgroundColor, legendName, latestValue, description }) => {
 

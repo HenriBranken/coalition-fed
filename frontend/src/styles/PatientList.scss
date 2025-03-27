@@ -4,7 +4,7 @@ div.patient-list {
   flex: 1; // Take up the remaining space after the banner.
   overflow-y: auto;
   overflow-x: hidden;
-  margin-right: 2px;
+  margin-right: 4px;
 
   &::-webkit-scrollbar {
     width: 6px;

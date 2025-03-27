@@ -1,3 +1,5 @@
+@use "./colors" as cols;
+
 div.patients-card {
   width: 367px;
   height: 1054px;
@@ -6,5 +8,7 @@ div.patients-card {
   flex-direction: column;
   border-radius: 16px;
 
-  border: black solid 1px;
+  // border: black solid 1px;
+
+  background-color: cols.$col_02;
 }

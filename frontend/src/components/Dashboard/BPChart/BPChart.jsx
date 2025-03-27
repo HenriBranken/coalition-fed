@@ -1,4 +1,5 @@
-import useHealth from '../../context/useHealth';
+import useHealth from '../../../context/useHealth';
+import BPChartDateRange from './BPChartDateRange';
 import {
   Chart as ChartJS,
   LineElement,
@@ -9,11 +10,8 @@ import {
   Legend,
   Tooltip
 } from 'chart.js';
-import "../../styles/BPChart.scss";
-
 import { Line } from 'react-chartjs-2';
-import BPChartDateRange from './BPChartDateRange';
-
+import "../../../styles/BPChart.scss";
 
 ChartJS.register(
   LineElement,

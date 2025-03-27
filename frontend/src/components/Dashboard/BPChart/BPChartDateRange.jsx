@@ -1,4 +1,4 @@
-import "../../styles/BPChartDateRange.scss";
+import "../../../styles/BPChartDateRange.scss";
 
 const BPChartDateRange = () => {
 

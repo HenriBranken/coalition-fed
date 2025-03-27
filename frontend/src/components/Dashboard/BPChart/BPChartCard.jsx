@@ -1,4 +1,4 @@
-import "../../styles/BPChartCard.scss";
+import "../../../styles/BPChartCard.scss";
 import BPChartLatestStats from "./BPChartLatestStats";
 import BPGraph from "./BPGraph";
 

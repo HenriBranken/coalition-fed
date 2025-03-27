@@ -1,6 +1,6 @@
-import "../../styles/BPChartLatestStats.scss";
+import "../../../styles/BPChartLatestStats.scss";
 import BPChartLatestStat from "./BPChartLatestStat";
-import useHealth from "../../context/useHealth";
+import useHealth from "../../../context/useHealth";
 
 const BPChartLatestStats = () => {
   const { healthData } = useHealth();

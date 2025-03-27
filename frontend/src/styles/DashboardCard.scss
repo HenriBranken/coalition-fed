@@ -1,0 +1,18 @@
+@use "./fonts" as fws;
+@use "./mixins" as *;
+@use "./colors" as cols;
+
+div.dashboard-card {
+  // border: black solid 1px;
+  padding: 20px;
+  border-radius: 16px;
+
+  background-color: cols.$col_02;
+
+  &>div.dashboard-title {
+    font-weight: fws.$extra_bold;
+    @include font-preset(24);
+    text-align: left;
+    margin-bottom: 40px;
+  }
+}

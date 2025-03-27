@@ -1,6 +1,6 @@
 import StatCard from "./StatCard";
-import useHealth from "../../context/useHealth";
-import "../../styles/StatRow.scss";
+import useHealth from "../../../context/useHealth";
+import "../../../styles/StatRow.scss";
 
 const StatRow = () => {
   const { healthData } = useHealth();

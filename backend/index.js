@@ -9,9 +9,6 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 8000;
 
-
-const __dirname = __dirname;
-
 app.use(express.json());
 // Set Up the Routes:
 app.use("/api/auth", authRouter);

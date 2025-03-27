@@ -76,8 +76,6 @@ const getHealth = async (_, res) => {
       selected_patient
     };
 
-    console.log(result);
-
     // Store in Cache, and set the Cache Timestamp:
     cachedResult = result;
     cacheTimestamp = now;

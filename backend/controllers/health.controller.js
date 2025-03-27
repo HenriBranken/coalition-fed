@@ -1,7 +1,13 @@
-import dotenv from "dotenv";
-import process from "node:process";
-import {encodeBasicAuth, summarizePeople, transformPersonData, generatePersonSummary} from "../utils.js";
-import axios from "axios";
+const dotenv = require("dotenv");
+const process = require("process");
+const axios = require("axios");
+
+const {
+  encodeBasicAuth,
+  summarizePeople,
+  transformPersonData,
+  generatePersonSummary
+} = require("../utils.js");
 
 dotenv.config();
 
@@ -89,4 +95,4 @@ const getHealth = async (_, res) => {
   }
 }
 
-export default getHealth;
+module.exports = getHealth;

@@ -1,24 +1,18 @@
-import express from "express";
-import dotenv from "dotenv";
-import authRouter from "./routers/health.router.js";
-import process from "node:process";
-
-import path from "node:path";
-import { fileURLToPath } from "node:url";
+const express = require("express");
+const dotenv = require("dotenv");
+const path = require("path");
+const authRouter = require("./routers/health.router");
+const process = require("node:process");
 
 dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 8000;
 
-// Fix the __dirname for ES Modules
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-console.log(`The filename is as follows: ${__filename}.`);
-console.log(`The dirname is as follows: ${__dirname}.`);
+
+const __dirname = __dirname;
 
 app.use(express.json());
-
 // Set Up the Routes:
 app.use("/api/auth", authRouter);
 
@@ -32,7 +26,7 @@ app.use(express.static(path.join(__dirname, "../frontend/dist")));
  * 
  * If someone mistypes the API path, the fallback will serve index.html, which will confuse things.
  */
-app.get("*", (req, res, next) => {
+app.get("*", (req, res) => {
   if (req.path.startsWith('/api/')) {
     return res.status(404).json({ error: "API route not found." });
   }

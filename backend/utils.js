@@ -1,7 +1,7 @@
 const encodeBasicAuth = (username, password) => {
   const credentials = `${username}:${password}`;
   // Binary to ASCII.
-  return btoa(credentials);
+  return Buffer.from(credentials).toString("base64");
 }
 
 const monthMap = {
@@ -105,4 +105,9 @@ const generatePersonSummary = (activePerson) => {
   }
 }
 
-export { encodeBasicAuth, transformPersonData, summarizePeople, generatePersonSummary };
+module.exports = {
+  encodeBasicAuth,
+  transformPersonData,
+  summarizePeople,
+  generatePersonSummary
+};

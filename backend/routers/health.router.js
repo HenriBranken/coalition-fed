@@ -1,9 +1,8 @@
-import { Router } from "express";
-// import { basicAuthentication } from "../middleware/basicAuth.js";
-import getHealth from "../controllers/health.controller.js";
+const express = require("express");
+const getHealth = require("../controllers/health.controller.js");
 
-const authRouter = Router();
+const authRouter = express.Router();
 
 authRouter.get("/", getHealth);
 
-export default authRouter;
+module.exports = authRouter;

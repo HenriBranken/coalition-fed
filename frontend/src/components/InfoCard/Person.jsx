@@ -9,7 +9,7 @@ const Person = () => {
 
   return (
     <div className="person">
-      <img src="/Layer_2@2x.png" alt={data.name + "'s Profile Picture"} className="person-pp" />
+      <img src="/Layer_2.png" srcSet="/Layer_2@2x.png" alt={data.name + "'s Profile Picture"} className="person-pp" />
       <div className="name">{data.name}</div>
     </div>
   )

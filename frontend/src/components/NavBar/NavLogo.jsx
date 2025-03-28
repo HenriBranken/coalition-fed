@@ -3,7 +3,7 @@ import "../../styles/NavLogo.scss";
 const NavLogo = () => {
 
   return (
-    <img src="/TestLogo.svg" alt="Company Logo" className="navbar-logo" />
+    <img src="/TestLogo.svg" srcSet="/TestLogo@2x.png" alt="Company Logo" className="navbar-logo" />
   );
 };
 

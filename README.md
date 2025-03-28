@@ -51,6 +51,9 @@ cd coalition-fed
 ```bash
 cd backend
 
+# Clone the sample environment file and create your own .env
+cp .env.copy .env
+
 # A clean install
 rm -rfv node_modules package-lock.json
 npm install
